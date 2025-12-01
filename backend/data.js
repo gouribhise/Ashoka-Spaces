@@ -1,4 +1,4 @@
-export const properties = [
+const data = [
     // 1
     {
       id: 1,
@@ -229,3 +229,4 @@ export const properties = [
     }))
   ];
   
+  export default data
