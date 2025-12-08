@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <section className="bg-light d-flex align-items-center" style={{ height: "80vh" }}>
+    <section className=" d-flex align-items-center" style={{ height: "80vh" }}>
       <div className="container text-center">
         {/* Heading */}
         <h1 className="fw-bold mb-3">The Simplest Way to Find Properties</h1>

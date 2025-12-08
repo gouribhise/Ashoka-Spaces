@@ -20,21 +20,29 @@ export default function Testimonials() {
         <h3 className="text-center">Testimonials</h3>
         <h1 className="text-center">Happy Clients</h1>
     </div>
-     <div className="testimonial-wrapper">
+     <div className="container testimonial-wrapper">
       <div className="testimonial-container">
 
         {visibleTestimonials.map((t) => (
-          <div className="testimonial" key={t.id}>
-            <img src={t.image} alt={t.name} className="testimonial-img" />
+         <div className="testimonial" key={t.id}>
 
-            <p className="testimonial-text">{t.text}</p>
+  {/* TOP QUOTE */}
+  <p className="testimonial-text">{t.quote}</p>
 
-            <h4 className="testimonial-name">{t.name}</h4>
+  {/* BOTTOM SECTION */}
+  <div className="testimonial-bottom">
+    <div className="testimonial-left">
+      <img src={t.image} alt={t.name} className="testimonial-img" />
+    </div>
 
-            <small className="testimonial-profession">
-              {t.profession}
-            </small>
-          </div>
+    <div className="testimonial-right">
+      <h4 className="testimonial-name">{t.name}</h4>
+      <small className="testimonial-profession">{t.profession}</small>
+    </div>
+  </div>
+
+</div>
+
         ))}
 
       </div>

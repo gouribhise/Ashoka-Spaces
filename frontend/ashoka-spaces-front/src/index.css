@@ -1,0 +1,44 @@
+h3{
+  color:#e86ed0 !important;
+  font-size: 3.2rem;
+  font-weight: bold;
+
+}
+
+.bi-lock-fill,.bi-journal-text,.bi-wallet2,.bi-piggy-bank,.bi{
+  font-size: 2.4rem;
+  color:#e86ed0
+}
+
+.offer{
+border:1px solid red; 
+width:20%;
+}
+
+.evaluate{
+  height:100%;
+}
+.evaluate .left{
+  background-color: black;
+  height:80vh;
+  color:white;
+  padding:200px;
+}
+
+.evaluate-right {
+  height: 100%;          /* full height of the row */
+  display: flex;
+  align-items: center;   /* centers image vertically */
+}
+
+.evaluate-img {
+  height:80vh !important;           /* 🔥 now 80% of column height works */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.nums{
+  font-size: 3.4rem;
+  font-weight: bold;
+}

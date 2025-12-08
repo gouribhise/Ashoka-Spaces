@@ -1,74 +1,60 @@
-const agentsData = [
+import img1 from "../../assets/images/a1.jpeg"
+import img2 from "../../assets/images/a2.jpeg"
+import img3 from "../../assets/images/a3.jpeg"
+import img4 from "../../assets/images/a4.jpeg"
+import img5 from "../../assets/images/a5.jpeg"
+import img6 from "../../assets/images/a6.jpeg"
+import img7 from "../../assets/images/a7.jpeg"
+import img8 from "../../assets/images/a8.jpeg"
+const agentsData = [  
+      
+    
     {
       id: 1,
-      name: "Rohan Mehta",
-      image: "agent1.jpg",
-      propertiesListed: 12
-    },
-    {
-      id: 2,
-      name: "Priya Kapoor",
-      image: "agent2.jpg",
-      propertiesListed: 9
-    },
-    {
-      id: 3,
-      name: "Amit Sharma",
-      image: "agent3.jpg",
-      propertiesListed: 14
-    },
-    {
-      id: 4,
-      name: "Sneha Iyer",
-      image: "agent4.jpg",
-      propertiesListed: 7
-    },
-    {
-      id: 5,
       name: "Karan Malhotra",
-      image: "agent5.jpg",
+      image: img1,
       propertiesListed: 16
     },
     {
-      id: 6,
+      id: 2,
       name: "Simran Ahuja",
-      image: "agent6.jpg",
+      image: img5,
       propertiesListed: 11
     },
     {
-      id: 7,
+      id: 3,
       name: "Ankit Desai",
-      image: "agent7.jpg",
+      image: img2,
       propertiesListed: 8
     },
     {
-      id: 8,
+      id: 4,
       name: "Nidhi Khanna",
-      image: "agent8.jpg",
+      image: img6,
       propertiesListed: 13
     },
     {
-      id: 9,
+      id: 5,
       name: "Vivek Reddy",
-      image: "agent9.jpg",
+      image:img3,
       propertiesListed: 10
     },
     {
-      id: 10,
-      name: "Aarav Joshi",
-      image: "agent10.jpg",
+      id: 6,
+      name: "Anita Joshi",
+      image: img7,
       propertiesListed: 5
     },
     {
-      id: 11,
+      id: 7,
       name: "Ishita Banerjee",
-      image: "agent11.jpg",
+      image: img8,
       propertiesListed: 6
     },
     {
-      id: 12,
+      id: 8,
       name: "Manav Gupta",
-      image: "agent12.jpg",
+      image: img4,
       propertiesListed: 9
     }
   ];

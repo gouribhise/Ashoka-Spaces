@@ -47,7 +47,7 @@ function Footer(){
             <p>info@emailid.com</p>
         </div>
         </div>
-        <div>
+        <div className="social">
          
              <a href="https://twitter.com/yourhandle" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
   <i className="bi bi-twitter" style={{ fontSize: '2.5rem',marginRight:'20px',color:'#e86ed0' }}></i>

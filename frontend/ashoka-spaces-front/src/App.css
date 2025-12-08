@@ -1,26 +1,58 @@
-.testimonial-wrapper {
-    width: 80%;
-    margin: 40px auto;
-    text-align: center;
-  }
-  
-  .testimonial-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    min-height: 200px;
-  }
-  
-  .testimonial {
-    width: 22%;
-    padding: 20px;
-    background: #f5f5f5;
-    border-radius: 10px;
-  }
-  
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #555;
+  text-align: center;
+}
+
+/* bottom section layout */
+.testimonial-bottom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* image section */
+.testimonial-left .testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* right text section */
+.testimonial-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.testimonial-profession {
+  color: #777;
+}
+
   .bullets {
     margin-top: 20px;
+    text-align: center;
   }
   
   .bullet {
@@ -45,3 +77,32 @@ footer{
   color:black;
  }
   
+ .bi-calendar,.bi-chat-dots{
+  font-size: 10px;
+  margin-right: 10px;
+ }
+ .footer-ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+}
+
+.footer-ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 28px;
+}
+
+.footer-ul li::before {
+  content: "➜"; /* clean small arrow */
+  position: absolute;
+  left:0;
+
+  top: 0;
+  color: #e86ed0; /* or white depending on footer */
+  font-size: 14px;
+}
+
+.social{
+  padding-bottom: 40px;
+}

@@ -2,7 +2,7 @@ const blogData = [
     {
       id: 1,
       title: "Top 10 Tips for First-Time Home Buyers",
-      image: "blog1.jpg",
+      image: "https://cdn.pixabay.com/photo/2017/06/16/15/53/new-home-2409512_640.jpg",
       shortDesc: "A simple guide to help new buyers understand budgets, loans, and inspections.",
       date: "2025-01-08",
       comments: 14,
@@ -11,7 +11,7 @@ const blogData = [
     {
       id: 2,
       title: "Why Investing in Real Estate Still Makes Sense",
-      image: "blog2.jpg",
+      image: "https://cdn.pixabay.com/photo/2021/10/07/15/23/real-estate-6688945_640.jpg",
       shortDesc: "Explore long-term benefits, rental income, and capital growth opportunities.",
       date: "2025-01-10",
       comments: 9,
@@ -20,7 +20,7 @@ const blogData = [
     {
       id: 3,
       title: "How to Identify a Good Neighborhood Before Buying",
-      image: "blog3.jpg",
+      image: "https://cdn.pixabay.com/photo/2017/10/17/16/37/house-2861178_1280.jpg",
       shortDesc: "Location matters—here’s what to check before finalizing your dream home.",
       date: "2025-01-12",
       comments: 7,
@@ -29,7 +29,7 @@ const blogData = [
     {
       id: 4,
       title: "Modern Interior Trends for 2025 Homes",
-      image: "blog4.jpg",
+      image: "https://cdn.pixabay.com/photo/2024/12/24/10/04/kitchen-9288111_1280.jpg",
       shortDesc: "Discover trending colors, layouts, and furniture ideas for modern living.",
       date: "2025-01-15",
       comments: 18,
@@ -38,7 +38,7 @@ const blogData = [
     {
       id: 5,
       title: "Renting vs Buying: Which Is Better in 2025?",
-      image: "blog5.jpg",
+      image: "https://cdn.pixabay.com/photo/2019/09/25/13/54/build-a-house-4503738_640.jpg",
       shortDesc: "A balanced look at pros, cons, and financial considerations.",
       date: "2025-01-18",
       comments: 11,
@@ -47,7 +47,7 @@ const blogData = [
     {
       id: 6,
       title: "How to Increase Your Property Value Easily",
-      image: "blog6.jpg",
+      image: "https://cdn.pixabay.com/photo/2025/08/27/06/09/realestateinvestment-9799236_640.jpg",
       shortDesc: "Simple upgrades that boost your home’s resale price without overspending.",
       date: "2025-01-22",
       comments: 22,
@@ -56,7 +56,7 @@ const blogData = [
     {
       id: 7,
       title: "Understanding Home Loans in India",
-      image: "blog7.jpg",
+      image: "https://cdn.pixabay.com/photo/2023/12/29/10/36/house-8475945_640.jpg",
       shortDesc: "From interest rates to eligibility—everything explained in simple words.",
       date: "2025-01-24",
       comments: 8,
@@ -65,48 +65,16 @@ const blogData = [
     {
       id: 8,
       title: "Things to Check Before Signing a Rent Agreement",
-      image: "blog8.jpg",
+      image: "https://cdn.pixabay.com/photo/2021/01/09/15/30/house-5902665_1280.jpg",
       shortDesc: "Avoid legal issues by checking these important clauses and conditions.",
       date: "2025-01-26",
       comments: 16,
       author: "Meera Acharya",
     },
-    {
-      id: 9,
-      title: "Best Property Investment Locations for 2025",
-      image: "blog9.jpg",
-      shortDesc: "Upcoming areas with strong growth, good connectivity, and better returns.",
-      date: "2025-01-28",
-      comments: 10,
-      author: "Yash Verma",
-    },
-    {
-      id: 10,
-      title: "How to Stage Your Home for Faster Selling",
-      image: "blog10.jpg",
-      shortDesc: "Proven styling tips to attract more buyers and secure a better price.",
-      date: "2025-01-30",
-      comments: 6,
-      author: "Pooja Nair",
-    },
-    {
-      id: 11,
-      title: "Understanding Property Taxes in India",
-      image: "blog11.jpg",
-      shortDesc: "A quick overview of how property tax works and what homeowners must know.",
-      date: "2025-02-01",
-      comments: 20,
-      author: "Siddharth Iyer",
-    },
-    {
-      id: 12,
-      title: "Checklist Before Booking an Under-Construction Property",
-      image: "blog12.jpg",
-      shortDesc: "Important approvals, builder reputation, and RERA details you must check.",
-      date: "2025-02-03",
-      comments: 13,
-      author: "Ritika Khanna",
-    },
+   
+    
+    
+    
   ];
   
   export default blogData;
