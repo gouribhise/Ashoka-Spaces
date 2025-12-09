@@ -22,10 +22,7 @@ function Header() {
         style={{ backgroundColor: "rgba(0,0,0,0.45)" }}
       />
 
-      {/* Navbar */}
-      <div className="position-relative">
-        <Navbar />
-      </div>
+   
 
       {/* Hero Content */}
       <div className="d-flex flex-column justify-content-center align-items-center text-center position-relative h-100 px-3">
