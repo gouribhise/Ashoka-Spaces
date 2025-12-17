@@ -106,3 +106,8 @@ footer{
 .social{
   padding-bottom: 40px;
 }
+
+.navbar .nav-link.active-link {
+  color: #dc3545 !important;
+  font-weight: 700 !important;
+}

@@ -1,5 +1,5 @@
 import React from "react";
- 
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
@@ -22,24 +22,56 @@ function Navbar() {
       {/* Menu Items */}
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto gap-4">
-          <li className="nav-item">
-            <Link to="/" className="nav-link" href="#">Home</Link>
-          </li>
-          <li className="nav-item">
-          <Link to="/about" className="nav-link">About</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/agents" className="nav-link" href="#">Agent</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/services" className="nav-link" href="#">Services</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/properties" className="nav-link" href="#">Properites</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact" className="nav-link" href="#">Contact</Link>
-          </li>
+        <NavLink
+            to="/"
+            end   //
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active-link" : ""}`
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active-link" : ""}`
+            }
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/agents"
+            
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active-link" : ""}`
+            }
+          >
+Agent          </NavLink>
+<NavLink
+            to="/services"
+            
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active-link" : ""}`
+            }
+          >
+Services          </NavLink>
+<NavLink
+            to="/properties"
+            
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active-link" : ""}`
+            }
+          >
+Properties          </NavLink>
+<NavLink
+            to="/contact"
+            
+            className={({ isActive }) =>
+              `nav-link ${isActive ? "active-link" : ""}`
+            }
+          >
+Contact          </NavLink>
         </ul>
       </div>
     </nav>
