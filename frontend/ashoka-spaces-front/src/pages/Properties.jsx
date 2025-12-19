@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
+import MainP from "./properties/MainP";
+import Filters from "./properties/Filters";
 
 function Properties() {
   const [properties, setProperties] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5;
+  const [filters, setFilters] = useState({
+    city: "",
+    type: ""
+  });
 
   useEffect(() => {
     fetch("http://localhost:3000/properties")
@@ -12,45 +16,23 @@ function Properties() {
       .catch(err => console.error(err));
   }, []);
 
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentProperties = properties.slice(
-    indexOfFirstItem,
-    indexOfLastItem
-  );
-
-  const totalPages = Math.ceil(properties.length / itemsPerPage);
+  const filteredProperties = properties.filter(p => {
+    return (
+      (filters.city === "" || p.city === filters.city) &&
+      (filters.type === "" || p.type === filters.type)
+    );
+  });
 
   return (
     <>
       <h1>Properties</h1>
-
-      {currentProperties.map(p => (
-        <div key={p.id} style={{ border: "1px solid #ccc", margin: "10px" }}>
-          <h3>{p.title}</h3>
-          <p>{p.city} - {p.area}</p>
-          <p>₹ {p.price}</p>
+      <div className="row">
+        <div className="col-md-4">
+          <Filters filters={filters} setFilters={setFilters} />
         </div>
-      ))}
-
-      {/* Pagination */}
-      <div style={{ marginTop: "20px" }}>
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map(number => (
-          <button
-            key={number}
-            onClick={() => setCurrentPage(number)}
-            style={{
-              margin: "5px",
-              padding: "6px 12px",
-              background: currentPage === number ? "#333" : "#eee",
-              color: currentPage === number ? "#fff" : "#000",
-              border: "none",
-              cursor: "pointer"
-            }}
-          >
-            {number}
-          </button>
-        ))}
+        <div className="col-md-7">
+          <MainP properties={filteredProperties} />
+        </div>
       </div>
     </>
   );
