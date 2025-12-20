@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Single from "./Single";
+import { Link } from "react-router-dom";
 function MainP({properties}){
       const [currentPage, setCurrentPage] = useState(1);
       const itemsPerPage = 5;
@@ -14,6 +16,7 @@ function MainP({properties}){
     return (
         <>
      {currentProperties.map(p => (
+      
         <div key={p.id} style={{ border: "1px solid #ccc", margin: "10px" }}>
             <img src={p.image}/>
           <h3>{p.title}</h3>
@@ -22,6 +25,7 @@ function MainP({properties}){
           <p>Size -{p.size}</p>
           <p>Type - {p.type}</p>
           <p><strong>Price: </strong>₹ {p.price}</p>
+          <Link to={`/property/${p.id}`}>View Details</Link>
         </div>
       ))}
 

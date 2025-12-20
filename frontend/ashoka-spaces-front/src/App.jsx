@@ -10,6 +10,7 @@ import AgentsPage from './pages/AgentsPage';
 import Services from './pages/Services';
 import Properties from './pages/Properties';
 import Contact from './pages/Contact';
+import Single from "./pages/properties/Single";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/agents" element={<AgentsPage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/properties" element={<Properties />} />
+        <Route path="/property/:id" element={<Single/>}/>
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
