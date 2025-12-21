@@ -15,7 +15,7 @@ const data = [
       amenities: ["Parking", "Lift", "Security"],
       price: 25000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://cdn.pixabay.com/photo/2016/11/22/23/38/apartment-1851201_640.jpg",
       ownerName: "Rohit Sharma",
       ownerPhone: "9876543210"
     },
@@ -36,7 +36,7 @@ const data = [
       amenities: ["Lift", "Security"],
       price: 15000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://pixabay.com/images/download/apartment-406901_1920.jpg",
       ownerName: "Sneha Patil",
       ownerPhone: "9822334455"
     },
@@ -57,7 +57,7 @@ const data = [
       amenities: ["Gym", "Parking", "Swimming Pool"],
       price: 15500000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://cdn.pixabay.com/photo/2017/02/24/12/23/kitchen-2094722_640.jpg",
       ownerName: "Amit Deshmukh",
       ownerPhone: "9811122233"
     },
@@ -76,7 +76,7 @@ const data = [
       amenities: ["Security", "Parking"],
       price: 45000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://pixabay.com/images/download/apartment-406901_1920.jpg",
       ownerName: "Tech Realty",
       ownerPhone: "9988776655"
     },
@@ -97,7 +97,7 @@ const data = [
       amenities: ["Lift", "Security"],
       price: 28000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://cdn.pixabay.com/photo/2021/02/03/23/10/living-room-5979694_960_720.jpg",
       ownerName: "Ravi Kapoor",
       ownerPhone: "9090909090"
     },
@@ -118,7 +118,7 @@ const data = [
       amenities: ["Garden", "Parking", "Security"],
       price: 35000000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://cdn.pixabay.com/photo/2013/10/12/18/05/villa-194671_1280.jpg",
       ownerName: "Elite Realtors",
       ownerPhone: "9870001234"
     },
@@ -139,7 +139,7 @@ const data = [
       amenities: ["Gym", "Pool", "Parking"],
       price: 55000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://cdn.pixabay.com/photo/2020/01/23/02/29/house-4786769_640.jpg",
       ownerName: "Sunshine Realty",
       ownerPhone: "9819981998"
     },
@@ -160,7 +160,7 @@ const data = [
       amenities: ["Clubhouse", "Security", "Parking"],
       price: 42000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://cdn.pixabay.com/photo/2020/06/25/10/21/architecture-5339245_640.jpg",
       ownerName: "Manish Real Estate",
       ownerPhone: "9876541111"
     },
@@ -181,7 +181,7 @@ const data = [
       amenities: ["Parking"],
       price: 18000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_640.jpg",
       ownerName: "Harsha Realty",
       ownerPhone: "9988771122"
     },
@@ -202,7 +202,7 @@ const data = [
       amenities: ["Parking", "Lift"],
       price: 24000000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://cdn.pixabay.com/photo/2018/01/26/08/15/dining-room-3108037_640.jpg",
       ownerName: "Dream Home Realtors",
       ownerPhone: "9611223300"
     },
@@ -223,7 +223,7 @@ const data = [
       amenities: ["Parking", "Lift", "Security"],
       price: Math.floor(Math.random() * 20000000) + 8000,
       currency: "INR",
-      image: "https://via.placeholder.com/400",
+      image: "https://cdn.pixabay.com/photo/2015/09/08/22/03/luggage-930804_640.jpg",
       ownerName: "Owner " + (11 + index),
       ownerPhone: "90000000" + (11 + index)
     }))
