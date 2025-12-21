@@ -15,10 +15,13 @@ function MainP({properties}){
 
     return (
         <>
+          <div className="row">
      {currentProperties.map(p => (
       
-        <div key={p.id} style={{ border: "1px solid #ccc", margin: "10px" }}>
-            <img src={p.image}/>
+    
+<div className="col-md-4">
+<div key={p.id} style={{ border: "1px solid #ccc", margin: "10px" }}>
+            <img src={p.image} style={{width:"200px",height:"200px"}}/>
           <h3>{p.title}</h3>
           
           <p>{p.city} - {p.area}</p>
@@ -27,7 +30,10 @@ function MainP({properties}){
           <p><strong>Price: </strong>₹ {p.price}</p>
           <Link to={`/property/${p.id}`}>View Details</Link>
         </div>
-      ))}
+</div>
+   
+       
+      ))}   </div>
 
        {/* Pagination */}
        <div style={{ marginTop: "20px" }}>
