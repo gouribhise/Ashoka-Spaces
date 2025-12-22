@@ -28,7 +28,7 @@ function Properties() {
       <h1>Properties</h1>
       <div className="row">
         <div className="col-md-4">
-          <Filters filters={filters} setFilters={setFilters} />
+          <Filters setFilters={setFilters} />
         </div>
         <div className="col-md-7">
           <MainP properties={filteredProperties} />

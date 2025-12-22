@@ -8,10 +8,7 @@ function Single() {
   useEffect(() => {
     fetch(`http://localhost:3000/property/${id}`)
       .then(res => res.json())
-      .then(result => {
-        console.log("API RESPONSE:", result);
-        setProperty(result.data);
-      })
+      .then(result => setProperty(result.data))
       .catch(err => console.error(err));
   }, [id]);
 
@@ -20,16 +17,25 @@ function Single() {
   }
 
   return (
-    <>
-      <h1>{property.title}</h1>
-      <p><b>Type:</b> {property.type}</p>
-      <p><b>Purpose:</b> {property.purpose}</p>
-      <p><b>City:</b> {property.city}</p>
-      <p><b>Area:</b> {property.area}</p>
-      <p><b>Price:</b> ₹{property.price}</p>
+    <div className="d-flex justify-content-center align-items-center vh-100">
+      <div className="text-center">
+        <h1>{property.title}</h1>
+        <img
+          src={property.image}
+          alt={property.title}
+          width="300"
+          className="img-fluid"
+        />
 
-      <img src={property.image} alt={property.title} width="300" />
-    </>
+        <p><b>Type:</b> {property.type}</p>
+        <p><b>Purpose:</b> {property.purpose}</p>
+        <p><b>City:</b> {property.city}</p>
+        <p><b>Area:</b> {property.area}</p>
+        <p><b>Price:</b> ₹{property.price}</p>
+
+     
+      </div>
+    </div>
   );
 }
 
